@@ -1,3 +1,4 @@
+$menuListItemHeight: 40px;
 
 header {
     display: grid;
@@ -30,16 +31,28 @@ header {
         & li {
             margin-bottom: 0;
             width: 100%;
-            height: 40px;
+            height: $menuListItemHeight;
             opacity: 0;
             font-size: 1.3rem;
+            font-weight: 500;
             transition: opacity 0.3s;
 
             & a {
                 text-decoration: none;
                 color: black;
+
+                &:hover {
+                    cursor: pointer;
+                    color: rgb(19, 19, 155);
+                }
             }
+            
+           
         }
+
+
+
+
     }
     
 }

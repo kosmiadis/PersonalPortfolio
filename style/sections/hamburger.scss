@@ -1,3 +1,5 @@
+$hiddenListHeight: 80px;
+
 header {
     #hamburger {
         display: none;  
@@ -37,7 +39,7 @@ header {
     input[type='checkbox']:checked {
 
        ~ #hidden-list {
-            height: 80px;
+            height: $hiddenListHeight;
 
             & li {
                 
