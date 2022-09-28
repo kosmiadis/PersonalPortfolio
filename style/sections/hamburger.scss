@@ -1,0 +1,74 @@
+header {
+    #hamburger {
+        display: none;  
+    }
+
+    #hidden-list {
+        overflow: hidden;
+    }
+
+    label {
+        height: 26px;
+        width: 33px;
+        position: relative;
+        transition: transform 0.4s;
+
+        & div.line {
+            border: 1px solid black;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            transition: transform 0.3s;
+        }
+    
+        & div.line1 {
+            top: 0px
+        }
+    
+        & div.line2 {
+            top: 13px;
+        }
+    
+        & div.line3 {
+            top: 26px;
+        }
+    }
+
+    input[type='checkbox']:checked {
+
+       ~ #hidden-list {
+            height: 80px;
+
+            & li {
+                
+                height: 40px;
+                opacity: 1;
+            }
+       }
+        
+        ~ label {
+            transform: rotate(180deg);
+            div.line {
+                top: 13px;
+            }
+            div.line1 {
+                transform: rotate(45deg);
+
+            }
+
+            div.line2 {
+                display: none;
+            }
+
+            div.line3 {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    
+    
+}
+
+
+
