@@ -1,0 +1,11 @@
+main {
+    border: 1px solid black;
+    div.welcome-container {
+        width: 80%;
+
+        & img {
+            width: 50%;
+            border-radius: 50%;
+        }
+    }
+}
