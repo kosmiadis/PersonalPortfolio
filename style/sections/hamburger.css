@@ -61,3 +61,32 @@ header input[type='checkbox']:checked ~ label div.line2 {
 header input[type='checkbox']:checked ~ label div.line3 {
   transform: rotate(-45deg);
 }
+
+@media screen and (min-width: 681px) {
+  header {
+    padding: 1rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header p {
+    width: max-content;
+  }
+  header label {
+    display: none;
+  }
+  header label ~ #hidden-list {
+    width: 230px;
+    align-self: end;
+    height: initial;
+    flex-direction: row;
+    grid-column: unset;
+    text-align: right;
+  }
+  header label ~ #hidden-list li {
+    opacity: 1;
+    height: initial;
+  }
+}

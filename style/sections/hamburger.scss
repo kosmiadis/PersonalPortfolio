@@ -72,5 +72,41 @@ header {
     
 }
 
+@media screen and (min-width: 681px) {
+    header {
+        padding: 1rem;
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         
+        p {
+            width: max-content;
+        }
+        label {
+            display: none;
+            
+            ~ #hidden-list {
+                width: 230px;
+                align-self: end;
+                height: initial;
+                flex-direction: row;
+                grid-column: unset;
+                text-align: right;
+                
+
+    
+                & li {
+                    opacity: 1;
+                    height: initial;
+                }
+           }
+        }
+
+        
+    }
+}
+
 
 
