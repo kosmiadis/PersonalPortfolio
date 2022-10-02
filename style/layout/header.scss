@@ -7,6 +7,9 @@ header {
     align-items: center;
     padding: 1rem;
     padding-inline: 2rem;
+    position: sticky;
+    top: 0;
+    
 
     .header-full-name {
         font-size: 1.3rem;
@@ -15,6 +18,7 @@ header {
     }
         
     #hidden-list {
+        background-color: rgb(209, 186, 184);
         height: 0;
         grid-column-start: 1;
         grid-column-end: -1;
