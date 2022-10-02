@@ -8,6 +8,7 @@ header {
   padding-inline: 2rem;
   position: sticky;
   top: 0;
+  background-color: #d1bab8;
 }
 
 header .header-full-name {
