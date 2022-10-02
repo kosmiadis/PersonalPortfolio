@@ -7,19 +7,13 @@ header {
     align-items: center;
     padding: 1rem;
     padding-inline: 2rem;
-    position: sticky;
-    top: 0;
-    background-color: rgb(209, 186, 184);
-    
 
     .header-full-name {
         font-size: 1.3rem;
         font-weight: 600;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
         
     #hidden-list {
-        background-color: rgb(209, 186, 184);
         height: 0;
         grid-column-start: 1;
         grid-column-end: -1;
@@ -50,14 +44,43 @@ header {
                     cursor: pointer;
                     color: rgb(19, 19, 155);
                 }
-            }
+            }      
+        }
+    }
+}
+
+@media screen and (min-width: 681px) {
+    header {
+        padding: 1rem;
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         
+        p {
+            width: max-content;
+        }
+        
+        label {
+            display: none;
             
-           
+            ~ #hidden-list {
+                width: 250px;
+                align-self: end;
+                height: initial;
+                flex-direction: row;
+                grid-column: unset;
+                
+
+    
+                & li {
+                    opacity: 1;
+                    height: initial;
+                }
+           }
         }
 
-
-
-
+        
     }
-    
 }

@@ -5,19 +5,14 @@ header {
   align-items: center;
   padding: 1rem;
   padding-inline: 2rem;
-  position: sticky;
-  top: 0;
-  background-color: #d1bab8;
 }
 
 header .header-full-name {
   font-size: 1.3rem;
   font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header #hidden-list {
-  background-color: #d1bab8;
   height: 0;
   grid-column-start: 1;
   grid-column-end: -1;
@@ -49,4 +44,32 @@ header #hidden-list li a {
 header #hidden-list li a:hover {
   cursor: pointer;
   color: #13139b;
+}
+
+@media screen and (min-width: 681px) {
+  header {
+    padding: 1rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header p {
+    width: max-content;
+  }
+  header label {
+    display: none;
+  }
+  header label ~ #hidden-list {
+    width: 250px;
+    align-self: end;
+    height: initial;
+    flex-direction: row;
+    grid-column: unset;
+  }
+  header label ~ #hidden-list li {
+    opacity: 1;
+    height: initial;
+  }
 }
