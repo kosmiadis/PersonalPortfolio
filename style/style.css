@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 header {
   display: grid;
   grid-template-columns: repeat(2, max-content);
@@ -142,20 +142,50 @@ header input[type='checkbox']:checked ~ label div.line3 {
 }
 
 main {
-  border: 1px solid black;
+  padding-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  align-self: center;
+  max-width: 60%;
+  border-radius: 50%;
+  border: 4px solid #c7aba7;
 }
 
 main div.welcome-container {
-  width: 80%;
+  width: 100%;
 }
 
-main div.welcome-container img {
-  width: 50%;
-  border-radius: 50%;
+main div.welcome-container p {
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  word-spacing: 3px;
+  font-weight: 500;
+  color: black;
+}
+
+main div.welcome-container p span {
+  color: #71625f;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+main div.bio p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 681px) {
+  main div.welcome-container img {
+    width: 30%;
+  }
 }
 
 body {
   margin: 0;
   background-color: #d1bab8;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
