@@ -34,17 +34,17 @@ header #hidden-list li {
   opacity: 0;
   font-size: 1.3rem;
   font-weight: 500;
-  transition: opacity 0.3s;
+  transition: opacity, transform 0.3s;
+}
+
+header #hidden-list li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 header #hidden-list li a {
   text-decoration: none;
   color: black;
-}
-
-header #hidden-list li a:hover {
-  cursor: pointer;
-  color: #13139b;
 }
 
 @media screen and (min-width: 681px) {
@@ -63,7 +63,7 @@ header #hidden-list li a:hover {
     display: none;
   }
   header label ~ #hidden-list {
-    width: 250px;
+    width: 300px;
     align-self: end;
     height: initial;
     flex-direction: row;
@@ -154,7 +154,6 @@ main img {
   align-self: center;
   max-width: 60%;
   border-radius: 50%;
-  border: 3px solid #a49a9a;
 }
 
 main div.welcome-container {
@@ -162,6 +161,7 @@ main div.welcome-container {
 }
 
 main div.welcome-container p {
+  line-height: 2rem;
   font-size: 1.2rem;
   letter-spacing: 0.3px;
   word-spacing: 3px;
@@ -176,6 +176,8 @@ main div.welcome-container p span {
 }
 
 main div.bio p {
+  text-align: justify;
+  line-height: 2rem;
   font-size: 1.2rem;
 }
 
@@ -215,7 +217,7 @@ body {
 }
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #dc6090, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee5252, #dc6090, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }

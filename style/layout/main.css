@@ -13,7 +13,6 @@ main img {
   align-self: center;
   max-width: 60%;
   border-radius: 50%;
-  border: 3px solid #a49a9a;
 }
 
 main div.welcome-container {
@@ -21,6 +20,7 @@ main div.welcome-container {
 }
 
 main div.welcome-container p {
+  line-height: 2rem;
   font-size: 1.2rem;
   letter-spacing: 0.3px;
   word-spacing: 3px;
@@ -35,6 +35,8 @@ main div.welcome-container p span {
 }
 
 main div.bio p {
+  text-align: justify;
+  line-height: 2rem;
   font-size: 1.2rem;
 }
 

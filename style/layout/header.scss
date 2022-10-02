@@ -34,16 +34,17 @@ header {
             opacity: 0;
             font-size: 1.3rem;
             font-weight: 500;
-            transition: opacity 0.3s;
+            transition: opacity, transform 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
 
             & a {
                 text-decoration: none;
                 color: black;
-
-                &:hover {
-                    cursor: pointer;
-                    color: rgb(19, 19, 155);
-                }
+                
             }      
         }
     }
@@ -66,7 +67,7 @@ header {
             display: none;
             
             ~ #hidden-list {
-                width: 250px;
+                width: 300px;
                 align-self: end;
                 height: initial;
                 flex-direction: row;

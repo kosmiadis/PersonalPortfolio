@@ -12,13 +12,13 @@ main {
         align-self: center;
         max-width:60%;
         border-radius: 50%;
-        border: 3px solid rgb(164, 154, 154);
     }
 
     div.welcome-container {
         width: 100%;
         
         & p {
+            line-height:2rem;
             font-size: 1.2rem;
             letter-spacing: 0.3px;
             word-spacing: 3px;
@@ -34,6 +34,8 @@ main {
 
     div.bio {
         & p {
+            text-align: justify;
+            line-height: 2rem;
             font-size: 1.2rem;
         }
     }

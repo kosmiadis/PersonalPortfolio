@@ -33,17 +33,17 @@ header #hidden-list li {
   opacity: 0;
   font-size: 1.3rem;
   font-weight: 500;
-  transition: opacity 0.3s;
+  transition: opacity, transform 0.3s;
+}
+
+header #hidden-list li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 header #hidden-list li a {
   text-decoration: none;
   color: black;
-}
-
-header #hidden-list li a:hover {
-  cursor: pointer;
-  color: #13139b;
 }
 
 @media screen and (min-width: 681px) {
@@ -62,7 +62,7 @@ header #hidden-list li a:hover {
     display: none;
   }
   header label ~ #hidden-list {
-    width: 250px;
+    width: 300px;
     align-self: end;
     height: initial;
     flex-direction: row;
