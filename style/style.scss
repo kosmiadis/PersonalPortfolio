@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 @import "layout/header.scss";
 @import "sections/hamburger.scss";
 @import "layout/main.scss";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "layout/projects.scss";
+@import "sections/swiper.scss";
+
 
 body {
     margin: 0;
@@ -23,5 +27,16 @@ body {
 	}
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	html {
+		display: flex;
+		justify-content: center;
+	}
+
+	body {
+		max-width: 1500px;
 	}
 }
