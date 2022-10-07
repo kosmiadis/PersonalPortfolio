@@ -1,21 +1,76 @@
-div.projects-container {
-    align-self: center;
-    display: grid;
-    grid-template-columns: 100%;
+section {
     width: 100%;
-    padding: 2rem;
-
-    div.project {
-
+    display: flex;
+    flex-direction: column;
+    
+    div.projects-container {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
         width: 100%;
+        
 
-        div.swiper {
 
-            div.swipe {
+        div.project {
+            align-self: center;    
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
 
-                img {
-                    width: 80%;
+            div.swiper {   
+                width: 360px;
+                height: 190px;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                & div {
+                    z-index: 10;
+                    font-size: 5rem;
+                    color: grey;
+                    transition: color 0.15s;
+                    &:hover {
+                        cursor: pointer;
+                        color: rgb(168, 126, 126);
+                    }
+
+                    &.arrow {
+                        position: absolute;
+                        top: 50%;
+                    }
                 }
+
+                & div.right-arrow {
+                    right: 0%;
+                    transform: translate(30%, -50%);
+                }
+
+                & div.left-arrow {
+                    left: 0%;
+                    transform: translate(-30%, -50%);
+                }
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                }
+
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: black;
+            }
+
+            p {
+                padding-inline: 2rem;
+                text-align: justify;
+                line-height: 2rem;
+                font-size: 1.2rem;
+
             }
         }
     }

@@ -1,15 +1,75 @@
-div.projects-container {
-  align-self: center;
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section div.projects-container {
   display: grid;
   grid-template-columns: 100%;
-  width: 100%;
-  padding: 2rem;
-}
-
-div.projects-container div.project {
+  justify-content: center;
   width: 100%;
 }
 
-div.projects-container div.project div.swiper div.swipe img {
-  width: 80%;
+section div.projects-container div.project {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+section div.projects-container div.project div.swiper {
+  width: 360px;
+  height: 190px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section div.projects-container div.project div.swiper div {
+  z-index: 10;
+  font-size: 5rem;
+  color: grey;
+  transition: color 0.15s;
+}
+
+section div.projects-container div.project div.swiper div:hover {
+  cursor: pointer;
+  color: #a87e7e;
+}
+
+section div.projects-container div.project div.swiper div.arrow {
+  position: absolute;
+  top: 50%;
+}
+
+section div.projects-container div.project div.swiper div.right-arrow {
+  right: 0%;
+  transform: translate(30%, -50%);
+}
+
+section div.projects-container div.project div.swiper div.left-arrow {
+  left: 0%;
+  transform: translate(-30%, -50%);
+}
+
+section div.projects-container div.project div.swiper img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+section div.projects-container div.project a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: black;
+}
+
+section div.projects-container div.project p {
+  padding-inline: 2rem;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
