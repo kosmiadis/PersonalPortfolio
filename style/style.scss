@@ -4,14 +4,14 @@
 @import "sections/hamburger.scss";
 @import "layout/main.scss";
 @import "layout/projects.scss";
-@import "sections/swiper.scss";
 @import "layout/contact.scss";
 
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-	background: linear-gradient(-45deg, #ee5252, #dc6090, #23d5ab);
+	//background: linear-gradient(-45deg, #ee5252, #dc6090, #23d5ab);
+	background-color: #aa80ff;
 	background-size: 400% 400%;
 	overflow-x: hidden;
 }

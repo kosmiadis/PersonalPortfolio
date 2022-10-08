@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 0px 40px black;
 }
 section {
     display: flex;
@@ -59,6 +60,7 @@ section {
                 border-radius: 4px;
                 align-self: center;
                 width: 80%;
+                box-shadow: 0px 0px 30px black;
                 
             }
         }
