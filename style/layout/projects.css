@@ -41,6 +41,7 @@ section div.projects-container div.project p {
 }
 
 section div.projects-container div.project img {
+  border-radius: 4px;
   align-self: center;
   width: 80%;
 }
