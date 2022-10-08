@@ -2,67 +2,32 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    
+    color: white;
     div.projects-container {
+        padding-top: 2rem;
+        background-color: #db80a3;
         display: grid;
         grid-template-columns: 100%;
+        gap: 3rem;
         justify-content: center;
         width: 100%;
         
 
 
         div.project {
+            text-align: center;
             align-self: center;    
             display: flex;
             flex-direction: column;
+            
             width: 100%;
-            text-align: center;
-
-            div.swiper {   
-                width: 360px;
-                height: 190px;
-                position: relative;
-                left: 50%;
-                transform: translateX(-50%);
-                & div {
-                    z-index: 10;
-                    font-size: 5rem;
-                    color: grey;
-                    transition: color 0.15s;
-                    &:hover {
-                        cursor: pointer;
-                        color: rgb(168, 126, 126);
-                    }
-
-                    &.arrow {
-                        position: absolute;
-                        top: 50%;
-                    }
-                }
-
-                & div.right-arrow {
-                    right: 0%;
-                    transform: translate(30%, -50%);
-                }
-
-                & div.left-arrow {
-                    left: 0%;
-                    transform: translate(-30%, -50%);
-                }
-
-                & img {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                }
-
-            }
-
+            
             a {
                 text-decoration: none;
                 font-size: 1.6rem;
                 font-weight: 600;
-                color: black;
+                color: inherit;
+                text-decoration-line: underline;
             }
 
             p {
@@ -70,7 +35,27 @@ section {
                 text-align: justify;
                 line-height: 2rem;
                 font-size: 1.2rem;
+                font-weight: 600;
 
+            }
+
+            & img {
+               align-self: center;
+                width: 80%;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    section {
+        div.projects-container {
+
+            div.project {
+                p {
+                    padding-inline: 4rem;
+                }
             }
         }
     }

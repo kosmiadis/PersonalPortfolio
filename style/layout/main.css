@@ -17,6 +17,7 @@ main img {
 
 main div.welcome-container {
   width: 100%;
+  text-align: center;
 }
 
 main div.welcome-container p {
