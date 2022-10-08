@@ -273,7 +273,7 @@ body {
 
 body {
   background: linear-gradient(-45deg, #ee5252, #dc6090, #23d5ab);
-  background-size: 100% 100%;
+  background-size: 400% 400%;
 }
 
 @keyframes gradient {
