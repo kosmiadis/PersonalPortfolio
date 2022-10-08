@@ -223,6 +223,7 @@ section {
 section div.projects-container {
   justify-self: center;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   display: grid;
   grid-template-columns: 100%;
   gap: 3rem;
