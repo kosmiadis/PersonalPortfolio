@@ -43,9 +43,8 @@ header #hidden-list li:hover {
   transform: scale(1.1);
 }
 
-header #hidden-list li a {
-  text-decoration: none;
-  color: black;
+header #hidden-list li button {
+  all: unset;
 }
 
 @media screen and (min-width: 681px) {
