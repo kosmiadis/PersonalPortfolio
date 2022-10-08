@@ -5,17 +5,15 @@
 @import "layout/main.scss";
 @import "layout/projects.scss";
 @import "sections/swiper.scss";
-
+@import "layout/contact.scss";
 
 
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-}
-
-body {
 	background: linear-gradient(-45deg, #ee5252, #dc6090, #23d5ab);
 	background-size: 400% 400%;
+	overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -30,7 +28,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1950px) {
 	html {
 		display: flex;
 		justify-content: center;

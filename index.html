@@ -8,9 +8,10 @@
     <link rel="icon" href="images/tab-icon.png">
     <link rel="stylesheet" href="style/style.css">
     <title>Vagelis Kosmiadis | Portfolio</title>
-    <script defer src="JS/scroll.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script defer src="JS/scroll.js"></script>   
+    <script defer src="JS/contact.js"></script>
 
-    <script defer src="JS/carousel.js"></script>
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
 
         
         <ul id="hidden-list">
-            <li class="projects-btn"><button>01. Projects</button></li>
+            <li class="portfolio-btn"><button>01. Portfolio</button></li>
             <li class="contact-btn"><button>02. Contact</button></li>
         </ul>
         
@@ -59,8 +60,11 @@
         </div>
     </main>
 
+    <p class="portfolio-title">Portfolio</p>
+
     <section>
-    
+        
+        
         <div class="projects-container">
 
             <div class="project">
@@ -90,6 +94,24 @@
         </div>
 
     </section>
+
+    
+    <p class="contact-title">Contact</p>
+    <div class="contact">
+        
+        <div class="contact-methods">
+            <form id="contact-form">
+                <label>Name</label>
+                <input type="text" name="user_name" id="name" required>
+                <label>Email</label>
+                <input type="email" name="user_email" id="email" required>
+                <label>Message</label>
+                <textarea name="message" required></textarea>
+                <input type="submit" value="Send">
+                <input type="hidden" name="contact_number">
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
