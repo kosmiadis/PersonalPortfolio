@@ -5,31 +5,28 @@
   padding-top: 1rem;
   background-color: rgba(255, 255, 255, 0.218);
   width: 100vw;
-  height: 150px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 5px grey;
 }
 
 div.contact {
-  padding-top: 18rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 div.contact div.contact-methods {
-  box-shadow: 0px 0px 20px grey;
-  transform: translateY(-50%);
   width: 70%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1em;
-  border-radius: 15px;
-  border-top: 15px solid #cdcdcd;
+  border-radius: 7px;
 }
 
 div.contact div.contact-methods * {
