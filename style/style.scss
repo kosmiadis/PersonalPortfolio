@@ -12,9 +12,19 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 	//background: linear-gradient(-45deg, #ee5252, #dc6090, #23d5ab);
-	background-color: #aa80ff;
-	
+	//background-color: #aa80ff;
+	background-image: url('../images/background-smartphone.jpg');
+	backdrop-filter: blur(3px);
 	overflow-x: hidden;
+	background-size: cover;
+	background-attachment: fixed;
+
+	
+	
+
+	* {
+		color: white;
+	}
 }
 
 @keyframes gradient {
@@ -33,6 +43,7 @@ body {
 	html {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 
 	body {

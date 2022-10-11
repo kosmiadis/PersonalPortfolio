@@ -1,6 +1,7 @@
 main {
   z-index: 10;
   padding-inline: 2rem;
+  background-image: url("images/background-wallpapper.webp");
 }
 
 main div.container {
@@ -28,13 +29,13 @@ main div.welcome-container p {
   letter-spacing: 0.3px;
   word-spacing: 3px;
   font-weight: 500;
-  color: black;
+  color: white;
 }
 
 main div.welcome-container p span {
-  color: #23201f;
+  color: #dfd9d7;
   font-size: 1.5rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 main div.bio p {
