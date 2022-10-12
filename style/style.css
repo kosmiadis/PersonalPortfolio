@@ -170,14 +170,14 @@ main div.welcome-container p {
   font-size: 1.2rem;
   letter-spacing: 0.3px;
   word-spacing: 3px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
 }
 
 main div.welcome-container p span {
   color: #dfd9d7;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 9 00;
 }
 
 main div.bio p {
@@ -420,7 +420,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-image: url("../images/background-smartphone.jpg");
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(20px);
   overflow-x: hidden;
   background-size: cover;
   background-attachment: fixed;
