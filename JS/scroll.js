@@ -1,13 +1,13 @@
-const portfolioTitle = document.querySelector(".portfolio-title");
+const portfolioContainer = document.querySelector('.projects-container')
 const portfolioBtn = document.querySelector('.portfolio-btn')
-const contactTitle = document.querySelector(".contact-title")
+const contactContainer = document.querySelector(".contact")
 const contactBtn = document.querySelector('.contact-btn')
 
 
 portfolioBtn.addEventListener('click', e => {
-    portfolioTitle.scrollIntoView({behavior: "smooth"});
+    portfolioContainer.scrollIntoView({behavior: "smooth"});
 })
 
 contactBtn.addEventListener('click', e => {
-    contactTitle.scrollIntoView({behavior: "smooth"})
+    contactContainer.scrollIntoView({behavior: "smooth"})
 })
