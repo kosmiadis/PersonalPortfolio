@@ -3,7 +3,6 @@ section {
   display: flex;
   flex-direction: column;
   color: black;
-  border-block: 10px solid black;
   background-image: url("../../images/background-pc.png");
 }
 
