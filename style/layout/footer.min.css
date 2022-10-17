@@ -1,1 +1,1 @@
-footer{position:relative;bottom:-15px;padding:1rem;display:flex;flex-direction:column;align-items:center}footer p{font-size:0.9rem;font-weight:600}footer img{width:30px}
+footer{backdrop-filter:blur(10px);position:relative;padding:1rem;display:flex;flex-direction:column;align-items:center}footer p{font-size:0.9rem;font-weight:600}footer img{width:30px}
