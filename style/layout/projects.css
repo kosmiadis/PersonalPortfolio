@@ -52,6 +52,8 @@ section div.projects-container div.project img {
   section div.projects-container {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
   }
   section div.projects-container div.project p {
     padding-inline: 4rem;
